@@ -1,0 +1,30 @@
+<button type="submit" id="submit" onclick="action_one()">Следующего кота, пожалуйтся!</button>
+<br>
+
+<div class="label"><img id="image" width=100% src="https://www.purina.ru/sites/default/files/2021-10/britanskaya-3.jpg"></div>
+
+<script type="application/javascript">
+
+let number = 0;
+
+let cats = ["https://www.purina.ru/sites/default/files/2021-10/britanskaya-3.jpg"
+,"https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kot-026.jpg/1200px-Kot-026.jpg"
+,"https://cdnn21.img.ria.ru/images/07e5/0a/0b/1753974972_0:117:3072:1845_1920x0_80_0_0_5fbad162a71b5c081cc51da0a8ed6f27.jpg"];
+
+function action_one(){
+	
+	if (number < 3)
+	{
+	document.getElementById("image").src=cats[number];
+	number+=1;
+	}
+  
+  else
+	{
+	alert("Котов больше нет, давай заново!");
+	number = 0;
+	}
+  
+}
+
+</script>
